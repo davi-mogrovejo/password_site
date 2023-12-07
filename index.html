@@ -28,6 +28,12 @@
             .then(response => response.text())
             .then(result => {
                 document.getElementById('result').innerText = result;
+
+                // If the result contains "Correct password", you can perform further actions here
+                if (result.includes('Correct password')) {
+                    // Additional actions or redirection can be added here
+                    console.log('Redirecting or performing additional actions...');
+                }
             });
         }
     </script>
